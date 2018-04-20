@@ -43,7 +43,11 @@ namespace ADS
             {
                 if (parent.right == null)
                 {
-                    // Create a new node connected to parent.right
+                    // Create a new node connected to parent.right   
+                    ADSNode n = new ADSNode();
+                    n.key = value;
+                    parent.right = n;
+                                
                 }
                 else
                 {
@@ -59,6 +63,10 @@ namespace ADS
                 if (parent.left == null)
                 {
                     // create a new node connected to parent.left
+                    ADSNode n = new ADSNode();
+                    n.key = value;
+                    parent.left = n;
+
                 }
                 else
                 {
